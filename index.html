@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <script src="scripts/main.js" type="module"></script>
+        <style>
+            body {
+                margin: 0px;
+                width: 100%;
+                height: 100%;
+                display: flex;
+            }
+            canvas {
+                margin: auto 10px;
+                height: calc(100% - 50px);
+                aspect-ratio: 2 / 3;
+                background-color: #f0f0f0;
+            }
+            .no-select {
+                -webkit-user-select: none; /* Safari */        
+                -moz-user-select: none; /* Firefox */
+                -ms-user-select: none; /* IE10+/Edge */
+                user-select: none; /* Standard */
+            }
+        </style>
+    </head>
+    <body>
+        <div style="flex-grow: 1; margin: 25px 0px;"></div>
+        <canvas id="canvas"></canvas>
+        <div style="flex-grow: 2; margin: 25px 0px; height: 900px; font-family: monospace;">
+            <div style="width: 225px">
+                <span style="font-size: 18px;">WEBGPU BVH DEMO</span><br>
+                <p>Uses WebGPU compute shaders to build a BVH and renders the result with path tracing. Drag and drop an .obj file to begin.</p>
+            Triangles : { <span id="triangle-count">2,000,000</span> } <br><br>
+            Parse File: { <span id="parse-time">0.000001s</span> }<br>
+            Build BVH : { <span id="build-time">0.000001s</span> }<br><br>
+            <div style="text-align: center;"><span style="cursor: pointer;" id="rotate-view" class="no-select">[ Rotate View ]</span></div>
+            </div>
+        </div>
+    </body>
+</html>
