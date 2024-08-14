@@ -1,9 +1,3 @@
-//import { initRadixSortKernel } from "./kernels/radix-sort.js "
-//import { initRadixTreeKernel } from "./kernels/radix-tree.js "
-//import { initAABB_ZidxKernel } from "./kernels/aabb-z-idx.js "
-//import { initBVHUpPassKernel } from "./kernels/bvh-up-pass.js"
-//import { initRearrangeKernel } from "./kernels/rearrange.js  "
-
 function initBVHBuild(device) {
 
     // initialize all other shaders

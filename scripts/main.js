@@ -1,7 +1,3 @@
-//import { initBVHBuild } from "./bvh/build-bvh.js"
-//import { initPathTracer } from "./pathtracer/pathtracer.js"
-//import { parseObj } from "./obj/parse-obj.js"
-
 window.onload = async () => {
     const { adapter, device } = await initWebGPU()
     if (!adapter || !device) return
@@ -17,7 +13,6 @@ window.onload = async () => {
 
     async function frame() {
         if (PT) {
-            console.log(queuedRotate)
             while (queuedRotate > 0) {
                 PT.rotateView()
                 queuedRotate--

@@ -1,9 +1,6 @@
-console.log("hello (outside)")
 // from : https://github.com/WesUnwin/obj-file-parser
 class OBJFile {
     constructor(fileContents, defaultModelName) {
-        console.log("Hello!")
-
       this._reset();
       this.fileContents = fileContents;
       this.defaultModelName = (defaultModelName || 'untitled');
