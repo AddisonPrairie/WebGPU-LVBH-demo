@@ -1,6 +1,6 @@
 
 // from : https://github.com/WesUnwin/obj-file-parser
-export class OBJFile {
+class OBJFile {
     constructor(fileContents, defaultModelName) {
       this._reset();
       this.fileContents = fileContents;

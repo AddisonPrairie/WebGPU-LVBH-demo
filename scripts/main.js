@@ -1,6 +1,6 @@
-import { initBVHBuild } from "./bvh/build-bvh.js"
-import { initPathTracer } from "./pathtracer/pathtracer.js"
-import { parseObj } from "./.obj/parse-obj.js"
+//import { initBVHBuild } from "./bvh/build-bvh.js"
+//import { initPathTracer } from "./pathtracer/pathtracer.js"
+//import { parseObj } from "./obj/parse-obj.js"
 
 window.onload = async () => {
     const { adapter, device } = await initWebGPU()

@@ -1,6 +1,6 @@
-import { OBJFile } from "./obj-file-parser.js"
+//import { OBJFile } from "./obj-file-parser.js"
 
-export function parseObj(file) {
+function parseObj(file) {
     const objFile = new OBJFile(file)
     const output  = objFile.parse()
 

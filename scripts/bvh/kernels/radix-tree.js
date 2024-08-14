@@ -1,5 +1,5 @@
 
-export function initRadixTreeKernel(device) {
+function initRadixTreeKernel(device) {
     // shader parameters
     const WG_SIZE = 64
 

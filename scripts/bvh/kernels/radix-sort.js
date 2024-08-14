@@ -1,5 +1,5 @@
 
-export function initRadixSortKernel(device) {
+function initRadixSortKernel(device) {
     // create bind group layouts
     const SCAN_UP_BG_LAYOUTS = [
         device.createBindGroupLayout({

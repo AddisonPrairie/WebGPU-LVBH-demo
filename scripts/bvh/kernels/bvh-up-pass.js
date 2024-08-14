@@ -1,5 +1,5 @@
 
-export function initBVHUpPassKernel(device) {
+function initBVHUpPassKernel(device) {
     // shader parameters
     const WG_SIZE = 64
 

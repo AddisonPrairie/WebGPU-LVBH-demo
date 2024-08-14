@@ -1,5 +1,5 @@
 
-export function initRearrangeKernel(device) {
+function initRearrangeKernel(device) {
     // shader parameters
     const WG_SIZE = 64
 

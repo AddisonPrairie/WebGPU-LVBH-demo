@@ -1,5 +1,5 @@
 // path tracer similar to https://github.com/AddisonPrairie/Personal-Site/blob/main/demos/sdf002/relic/script.js
-export function initPathTracer(device, canvas, bvh) {
+function initPathTracer(device, canvas, bvh) {
     const CANVAS = initCanvas(device, canvas)
 
     let  rot = 0.

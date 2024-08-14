@@ -1,5 +1,5 @@
 
-export function initAABB_ZidxKernel(device) {
+function initAABB_ZidxKernel(device) {
     // shader parameters
     const WG_SIZE = 64
 
